@@ -2,15 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Model;
+package Model.Protocolos;
+
+import Model.Protocolo;
+import Model.Frame;
 
 /**
  *
  * @author Renzo
  */
-public class PAR extends Protocolo {
+public class StopWait extends Protocolo {
     
-    public PAR(Frame[] frames) {
+    public StopWait(Frame[] frames) {
         super(frames);
     }
     
