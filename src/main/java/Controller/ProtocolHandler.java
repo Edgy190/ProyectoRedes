@@ -19,7 +19,7 @@ import Model.Protocolos.Utopia;
 public class ProtocolHandler {
     public static Event event;
     public static Utopia utopia = new Utopia();
-    public static StopWait StopWait = new StopWait();
+    public static StopWait stopWait = new StopWait();
     public static PAR PAR = new PAR();
     public static SlideWindow1 slideWindow1 = new SlideWindow1();
     public static GoBackn goBackn = new GoBackn();

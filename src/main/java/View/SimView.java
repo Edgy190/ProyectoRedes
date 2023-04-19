@@ -5,6 +5,7 @@
 package View;
 
 import static Controller.ProtocolHandler.event;
+import static Controller.ProtocolHandler.stopWait;
 import static Controller.ProtocolHandler.utopia;
 import Model.Event;
 import Model.Frame;
@@ -183,7 +184,11 @@ public class SimView extends javax.swing.JFrame {
         }
         
         if (protocolCombo.getSelectedItem().equals("Stop-and-wait")) {
-            System.out.println("Stop-and-wait");
+            event = Event.Wait;
+            output.append(event.toString());
+            output.append("\n");
+            stopWait.MachineASender(packet, (Integer) sequenceSpinner.getValue());
+            stopWait.machineBReceiver(outputFrameList.get(outputFrameList.size()-1), event);
         }
         
         if (protocolCombo.getSelectedItem().equals("PAR")) {
