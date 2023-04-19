@@ -4,17 +4,21 @@
  */
 package Model.Protocolos;
 
-import Model.Protocolo;
-import Model.Frame;
-
 /**
  *
  * @author Renzo
  */
-public class SlideWindow1 extends Protocolo {
+public class SlideWindow1 {
+
+    public SlideWindow1() {
+    }
     
-    public SlideWindow1(Frame[] frames) {
-        super(frames);
+    public void enviar() {
+        
+    }
+    
+    public void recibir() {
+        
     }
     
 }

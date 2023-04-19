@@ -4,17 +4,21 @@
  */
 package Model.Protocolos;
 
-import Model.Protocolo;
-import Model.Frame;
-
 /**
  *
  * @author Renzo
  */
-public class PAR extends Protocolo {
+public class PAR {
+
+    public PAR() {
+    }
     
-    public PAR(Frame[] frames) {
-        super(frames);
+    public void enviar() {
+        
+    }
+    
+    public void recibir() {
+        
     }
     
 }

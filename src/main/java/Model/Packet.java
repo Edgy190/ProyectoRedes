@@ -9,22 +9,22 @@ package Model;
  * @author Renzo
  */
 public class Packet {
-    private char[] cadenaChar;
+    private String cadena;
     private int numConf;
     private int numInfo;
 
-    public Packet(char[] cadenaChar, int numConf, int numInfo) {
-        this.cadenaChar = cadenaChar;
+    public Packet(String cadena, int numConf, int numInfo) {
+        this.cadena = cadena;
         this.numConf = numConf;
         this.numInfo = numInfo;
     }
 
-    public char[] getCadenaChar() {
-        return cadenaChar;
+    public String getCadena() {
+        return cadena;
     }
 
-    public void setCadenaChar(char[] cadenaChar) {
-        this.cadenaChar = cadenaChar;
+    public void setCadena(String cadena) {
+        this.cadena = cadena;
     }
 
     public int getNumConf() {
@@ -45,6 +45,7 @@ public class Packet {
 
     @Override
     public String toString() {
-        return "Packet{" + "cadenaChar=" + cadenaChar + ", numConf=" + numConf + ", numInfo=" + numInfo + '}';
+        return "Packet{" + "cadena=" + cadena + ", numConf=" + numConf + ", numInfo=" + numInfo + '}';
     }
+
 }

@@ -4,17 +4,21 @@
  */
 package Model.Protocolos;
 
-import Model.Protocolo;
-import Model.Frame;
-
 /**
  *
  * @author Renzo
  */
-public class GoBackn extends Protocolo {
+public class GoBackn {
+
+    public GoBackn() {
+    }
     
-    public GoBackn(Frame[] frames) {
-        super(frames);
+    public void enviar() {
+        
+    }
+    
+    public void recibir() {
+        
     }
     
 }

@@ -4,17 +4,21 @@
  */
 package Model.Protocolos;
 
-import Model.Protocolo;
-import Model.Frame;
-
 /**
  *
  * @author Renzo
  */
-public class SelectiveRepeat extends Protocolo {
+public class SelectiveRepeat {
     
-    public SelectiveRepeat(Frame[] frames) {
-        super(frames);
+    public SelectiveRepeat() {
+    }
+    
+    public void enviar() {
+        
+    }
+    
+    public void recibir() {
+        
     }
     
 }

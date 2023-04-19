@@ -1,1 +1,15 @@
-Model\ProyectoRedes.class
+Model\Protocolos\Utopia.class
+Model\Protocolos\StopWait.class
+View\SimView$2.class
+View\SimView$1.class
+View\SimView.class
+Model\Protocolos\PAR.class
+Model\Tipo.class
+Model\Packet.class
+Model\Protocolos\GoBackn.class
+Controller\CapaRed.class
+Model\Protocolos\SlideWindow1.class
+Model\Events.class
+Model\Frame.class
+Model\Protocolos\SelectiveRepeat.class
+View\SimView$3.class

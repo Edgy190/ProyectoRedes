@@ -4,17 +4,24 @@
  */
 package Model.Protocolos;
 
-import Model.Protocolo;
-import Model.Frame;
+import static Controller.ProtocolHandler.*;
+import Model.Event;
 
 /**
  *
  * @author Renzo
  */
-public class StopWait extends Protocolo {
-    
-    public StopWait(Frame[] frames) {
-        super(frames);
+public class StopWait {
+
+    public StopWait() {
     }
     
+    public void enviar() {
+        
+    }
+    
+    public void recibir() {
+        
+    }
+
 }

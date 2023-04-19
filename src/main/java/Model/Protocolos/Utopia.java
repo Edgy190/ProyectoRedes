@@ -1,7 +1,11 @@
 package Model.Protocolos;
-
-import Model.Protocolo;
+import static Controller.ProtocolHandler.event;
+import Model.Event;
 import Model.Frame;
+import Model.Packet;
+import Model.Tipo;
+import static View.SimView.inputPacketList;
+import static View.SimView.outputFrameList;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -12,10 +16,30 @@ import Model.Frame;
  *
  * @author Renzo
  */
-public class Utopia extends Protocolo {
+public class Utopia {
+
+    public Utopia() {
+    }
     
-    public Utopia(Frame[] frames) {
-        super(frames);
+    public Frame MachineASender(Packet packet, int Seq) {
+        packet.setNumConf(outputFrameList.size());
+        packet.setNumInfo(packet.getCadena().length());
+        Frame frame = new Frame(Tipo.Dynamic, Seq, null);
+        while (true) {
+            frame.setPacket(packet);
+            outputFrameList.add(frame);
+            return frame;
+        }
+    }
+
+    public Packet machineBReceiver(Frame frame, Event eve) {
+        while (eve.equals(Event.Frame_Arrival)) {
+            event = Event.Frame_Arrival;
+        }
+        frame.getPacket().setNumConf(inputPacketList.size());
+        frame.getPacket().setNumInfo(frame.getPacket().getCadena().length());
+        inputPacketList.add(frame.getPacket());
+        return frame.getPacket();
     }
     
 }

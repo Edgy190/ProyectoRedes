@@ -9,23 +9,21 @@ package Model;
  * @author Renzo
  */
 public class Frame {
-    private int tipo;
+    private Tipo tipo;
     private int numSecuencia;
-    private int numConf;
-    private int numInfo;
+    private Packet packet;
 
-    public Frame(int tipo, int numSecuencia, int numConf, int numInfo) {
+    public Frame(Tipo tipo, int numSecuencia, Packet packet) {
         this.tipo = tipo;
         this.numSecuencia = numSecuencia;
-        this.numConf = numConf;
-        this.numInfo = numInfo;
+        this.packet = packet;
     }
 
-    public int getTipo() {
+    public Tipo getTipo() {
         return tipo;
     }
 
-    public void setTipo(int tipo) {
+    public void setTipo(Tipo tipo) {
         this.tipo = tipo;
     }
 
@@ -37,24 +35,17 @@ public class Frame {
         this.numSecuencia = numSecuencia;
     }
 
-    public int getNumConf() {
-        return numConf;
+    public Packet getPacket() {
+        return packet;
     }
 
-    public void setNumConf(int numConf) {
-        this.numConf = numConf;
-    }
-
-    public int getNumInfo() {
-        return numInfo;
-    }
-
-    public void setNumInfo(int numInfo) {
-        this.numInfo = numInfo;
+    public void setPacket(Packet packet) {
+        this.packet = packet;
     }
 
     @Override
     public String toString() {
-        return "Frame{" + "tipo=" + tipo + ", numSecuencia=" + numSecuencia + ", numConf=" + numConf + ", numInfo=" + numInfo + '}';
+        return "Frame{" + "tipo=" + tipo + ", numSecuencia=" + numSecuencia + ", packet=" + packet + '}';
     }
+
 }

@@ -8,7 +8,10 @@ package Model;
  *
  * @author Renzo
  */
-public enum Tipo {
-    Fixed,
-    Dynamic
+public enum Event {
+    Wait,
+    Frame_Arrival,
+    Cksum_Err,
+    Ack_Timeout,
+    Network_Layer_Ready
 }
